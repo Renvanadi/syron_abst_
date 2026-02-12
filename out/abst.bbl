@@ -1,0 +1,21 @@
+\begin{thebibliography}{1}
+
+\bibitem{10.1145/1186822.1073298}
+Zhu, Y. and Bridson, R.: Animating sand as a fluid,  {\em ACM SIGGRAPH 2005 Papers\/}, SIGGRAPH '05, New York, NY, USA, Association for Computing Machinery, p.\ 965–972, 2005.
+
+\bibitem{gingold1977}
+Gingold, R.~A. and Monaghan, J.~J.: {\em Smoothed particle hydrodynamics: theory and application to non-spherical stars\/}, 1977.
+
+\bibitem{Bardenhagen2004GIMP}
+Bardenhagen, S.~G. and Kober, E.~M. : The Generalized Interpolation Material Point Method, {\em Computer Modeling in Engineering \& Sciences\/},  Vol.~5, No.~6, pp.\ 477--496, 2004.
+
+\bibitem{散逸系の変分}
+深川宏樹, Hiroki, F. : 散逸系の変分原理, 日本物理学会誌,  Vol.~72, No.~1, pp.\ 34--38, 2017.
+
+\bibitem{境界積分}
+松永拓也, Takuya, M., 柴田和也, Kazuya, S., 越塚誠一, Seiichi, K. : MPS法における境界積分を用いたポリゴン壁境界表現, 日本機械学会論文集,  Vol.~84, No.~864, pp.\ 18--00197, 2018.
+
+\bibitem{GHIA1982387}
+Ghia, U., Ghia, K. and Shin, C. : High-Re solutions for incompressible flow using the Navier-Stokes equations and a multigrid method, {\em Journal of Computational Physics\/},  Vol.~48, No.~3, pp.\ 387--411, 1982.
+
+\end{thebibliography}
