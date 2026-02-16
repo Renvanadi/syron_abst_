@@ -18,4 +18,7 @@ Bardenhagen, S.~G. and Kober, E.~M. : The Generalized Interpolation Material Poi
 \bibitem{GHIA1982387}
 Ghia, U., Ghia, K. and Shin, C. : High-Re solutions for incompressible flow using the Navier-Stokes equations and a multigrid method, {\em Journal of Computational Physics\/},  Vol.~48, No.~3, pp.\ 387--411, 1982.
 
+\bibitem{KLEEFSMAN2005363}
+Kleefsman, K., Fekken, G., Veldman, A., Iwanowski, B. and Buchner, B. : A Volume-of-Fluid based simulation method for wave impact problems, {\em Journal of Computational Physics\/},  Vol.~206, No.~1, pp.\ 363--393, 2005.
+
 \end{thebibliography}

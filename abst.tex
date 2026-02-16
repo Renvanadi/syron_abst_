@@ -8,6 +8,7 @@
 \def\gtfam{applmech}
 \usepackage{applm-2e}
 \usepackage{here}
+\usepackage[dvipdfmx]{xcolor}
 \usepackage{amsmath,amssymb,bm}
 \usepackage{amsmath}
 \usepackage[dvipdfmx]{graphicx}
@@ -92,7 +93,7 @@ Smoothed Particle Hydrodynamics(SPH)\cite{gingold1977}の圧力勾配モデル�
 
 \begin{figure}[htbp]
   \begin{center}
-    \includegraphics[scale=0.3]{eps/uniformGIMP.eps}
+    \includegraphics[scale=0.2]{eps/uniformGIMP.eps}
   \end{center}
   \caption{uniformGIMPの物理量補間}
   \label{fig:uniformGIMP}
@@ -198,14 +199,45 @@ Ghiaらによる解析結果\cite{GHIA1982387}と，提案手法による解析�
 \end{figure}
 辺BC,CD,DAの壁面近くの流速分布は，Ghiaらの解析結果よりも流速が小さくなっている．
 
-\subsection{障害物なしダムブレイク}
 \subsection{障害物ありダムブレイク}
+Kleefsman らによるダムブレイクの実験結果\cite{KLEEFSMAN2005363}と比較する．\figref{dambreak3d}に初期状態と，障害物上に設置された圧力計測点の配置を示す．
+圧力計測点における圧力推移について，実験値と本研究で提案した手法による解析結果を比較する．
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[scale=0.2]{eps/geo_kleefsman.eps}
+  \end{center}
+  \caption{初期配置と圧力測定する点P1,P3,P6}
+  \label{fig:dambreak3d}
+\end{figure}
+\figref{output}の解析結果より，圧力推移の概形は実験値と一致する．
+全体として実験値よりも圧力が大きいのは，滑りあり条件で解析したことが要因だと考える．
+\begin{figure}[htbp]
+  \centering
+  \resizebox{0.31\linewidth}{!}{%
+    \input{graph/slip_dt0001_p1.tex}
+  }
+  \resizebox{0.31\linewidth}{!}{%
+    \input{graph/slip_dt0001_p3.tex}
+  }
+  \resizebox{0.31\linewidth}{!}{%
+    \input{graph/slip_dt0001_p6.tex}
+  }
+  \caption{ダムブレイク圧力推移(左:P1，中央:P3，右:P6)}
+  \label{fig:output}
+\end{figure}
 
 \section{結論}
+まず，変分法により，明示的な自由表面判定を行わずに，
+スタッガード格子上の非圧縮性粘性流体の支配方程式と圧力Poisson方程式を導出した．
+その際，非圧縮性条件は\(\nabla \cdot \boldsymbol{v}=0\)ではなく，セル体積の不等式制約を用いた．
+次に，SPHの圧力勾配モデルを導入することで，SPHの圧力勾配により流体粒子の不均一な分布を抑制した．
+
+この提案手法を用いて，キャビティ流れ，ダムブレイクの先行研究と比較した結果，次のように考察した．
+1セルあたりの流体粒子の配置数を大きくすること，圧力Poisson方程式に緩和係数を導入することが，圧力振動を抑制する効果を有する．
+緩和係数の導入により，僅かな非圧縮性を許容することになり，誤差の原因になると考える．
 
 \bibliographystyle{jsce}
 \bibliography{list}
-
 
 \begin{flushright}
   \vspace{-2.8mm}

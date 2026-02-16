@@ -4,46 +4,46 @@ The top-level auxiliary file: abst.aux
 The style file: jsce.bst
 Database file #1: list.bib
 Warning--Missing required argument publisher in gingold1977
-You've used 6 entries,
+You've used 7 entries,
             2039 wiz_defined-function locations,
-            540 strings with 4818 characters,
-and the built_in function-call counts, 1827 in all, are:
-= -- 146
-> -- 57
-< -- 5
-+ -- 23
-- -- 17
-* -- 123
-:= -- 227
-add.period$ -- 6
-call.type$ -- 6
+            546 strings with 5007 characters,
+and the built_in function-call counts, 2194 in all, are:
+= -- 174
+> -- 73
+< -- 6
++ -- 29
+- -- 22
+* -- 152
+:= -- 273
+add.period$ -- 7
+call.type$ -- 7
 change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 7
-duplicate$ -- 98
-empty$ -- 179
-format.name$ -- 34
-if$ -- 459
+cite$ -- 8
+duplicate$ -- 115
+empty$ -- 211
+format.name$ -- 44
+if$ -- 550
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 6
-newline$ -- 21
-num.names$ -- 6
-pop$ -- 12
+int.to.str$ -- 7
+missing$ -- 7
+newline$ -- 24
+num.names$ -- 7
+pop$ -- 13
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 103
+skip$ -- 121
 stack$ -- 0
-substring$ -- 123
-swap$ -- 51
-text.length$ -- 5
+substring$ -- 151
+swap$ -- 61
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 16
-width$ -- 7
-write$ -- 51
-is.kanji.str$ -- 31
+while$ -- 19
+width$ -- 8
+write$ -- 59
+is.kanji.str$ -- 38
 (There was 1 warning)
