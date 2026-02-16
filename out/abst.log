@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.uptex) (TeX Live 2023/Debian) (preloaded format=uplatex 2024.5.21)  15 FEB 2026 23:57
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.uptex) (TeX Live 2023/Debian) (preloaded format=uplatex 2024.4.30)  16 FEB 2026 17:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -459,13 +459,16 @@ LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <9> not available
 (Font)              Font shape `JY2/gt/m/n' tried instead on input line 98.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 (Font)              scaled to size 8.32214pt on input line 98.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 File: eps/cavity.eps Graphic file (type eps)
 <eps/cavity.eps>
 File: eps/cavtity100400.eps Graphic file (type eps)
 <eps/cavtity100400.eps>
 File: eps/cavtity10003200.eps Graphic file (type eps)
 <eps/cavtity10003200.eps>
-[1
+ [1
 
 
 ]
