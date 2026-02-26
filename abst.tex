@@ -84,12 +84,14 @@ PIC/FLIPの利点として，格子法の安定性と粒子法の自由表面追
 まず，非圧縮性条件を\(\nabla \cdot \boldsymbol{v}=0\)で定式化した場合，流体領域のトポロジーが変化するようなセルで非物理的に圧力が上昇する．
 次に，流体粒子が初期配置を維持したまま移動することで，粒子が存在しない空のセルが発生する問題がある．
 本研究では，これらの課題を解決するために，変分法に基づく圧力Poisson方程式の導出と，
-Smoothed Particle Hydrodynamics(SPH)\cite{gingold1977}の圧力勾配モデルの導入を提案する．
+Smoothed Particle Hydrodynamics(SPH)
+%\cite{gingold1977}
+の圧力勾配モデルの導入を提案する．
 
 \section{数値計算法}
 \subsection{GIMPを用いた補間}
-流体粒子からノードへの物理量の補間に，Generalized Interpolation Material Point Method(GIMP)\cite{Bardenhagen2004GIMP}
-を用いることで，流体粒子がセルを跨いで移動した際の不連続な補間値の変化を抑制する(\figref{uniformGIMP})．
+流体粒子からノードへの物理量の補間に，Generalized Interpolation Material Point Method(GIMP)%\cite{Bardenhagen2004GIMP}
+を用いることで，流体粒子がセルを跨いで移動した際の不連続な補間値の変化を抑制する.%(\figref{uniformGIMP})．
 \vspace{1em}
 \begin{figure}[htbp]
   \begin{center}
@@ -111,7 +113,7 @@ Smoothed Particle Hydrodynamics(SPH)\cite{gingold1977}の圧力勾配モデル�
 %\end{figure}
 
 \subsection{変分法に基づく圧力Poisson方程式の導出}
-深川らによる散逸系の変分原理\cite{散逸系の変分}を参照して，
+%深川らによる散逸系の変分原理\cite{散逸系の変分}を参照して，
 運動エネルギー，ポテンシャルエネルギー\(U\)，内部エネルギー\(e\)で構成されたラグランジアン\(\mathcal{L}\)を次で与える．
 \begin{equation}
   \mathcal{L}[\boldsymbol{x},\boldsymbol{v},e] = {}
@@ -211,19 +213,19 @@ Kleefsman らによるダムブレイクの実験結果\cite{KLEEFSMAN2005363}�
 \end{figure}
 \figref{output}の解析結果より，圧力推移の概形は実験値と一致する．
 全体として実験値よりも圧力が大きいのは，滑りあり条件で解析したことが要因だと考える．
-\begin{figure}[htbp]
-  \centering
-  \resizebox{0.31\linewidth}{!}{%
-    \input{graph/slip_dt0001_p1.tex}
+\begin{figure}
+  \scalebox{0.4}{ % ← ここを変える
+    \begin{minipage}{\linewidth}
+      \hspace*{-1cm}
+      \input{graph/s1_p1.tex}
+      \hspace*{-1cm}
+      \input{graph/s1_p3.tex}
+      \hspace*{-1cm}
+      \input{graph/s1_p6.tex}
+    \end{minipage}
   }
-  \resizebox{0.31\linewidth}{!}{%
-    \input{graph/slip_dt0001_p3.tex}
-  }
-  \resizebox{0.31\linewidth}{!}{%
-    \input{graph/slip_dt0001_p6.tex}
-  }
-  \caption{ダムブレイク圧力推移(左:P1，中央:P3，右:P6)}
-  \label{fig:output}
+  \caption{圧力推移(上:P1，中央:P3，下:P6圧力推移)}
+  \label{fig:slip1}
 \end{figure}
 
 \section{結論}
